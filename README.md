@@ -31,3 +31,4 @@ To run your tests
 | Topic|Link |
 |------|-----|
 | Reverse Array        | [Reverse Array](javascript/arrayReverse/README.md)|
+| array-insert-shift        | [array-insert-shift](javascript/array-insert-shift/README.md)|
