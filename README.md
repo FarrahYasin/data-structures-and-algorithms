@@ -32,3 +32,4 @@ To run your tests
 |------|-----|
 | Reverse Array        | [Reverse Array](javascript/arrayReverse/README.md)|
 | array-insert-shift        | [array-insert-shift](javascript/array-insert-shift/README.md)|
+| Singly Linked List        | [Singly Linked List](javascript/SLinkedList/README.md)|
