@@ -1,5 +1,5 @@
 ## Whiteboard Process:
-![insert Shift Array](insertShiftArrayy.png)
+![insert Shift Array](cc_class_02.png)
 ____________________
 
 ## The Approach & Efficiency:
