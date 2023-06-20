@@ -1,6 +1,6 @@
 ## Whiteboard Process:
 
-![Array-Binary-Search](binary-search.png)
+![Array-Binary-Search](new-binary-search.png)
 ____________________
 
 ## summary:
