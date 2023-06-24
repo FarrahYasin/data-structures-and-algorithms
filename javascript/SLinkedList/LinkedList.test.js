@@ -62,6 +62,62 @@ describe('testing the Linked List', () => {
     expect(FinalResult).toBe('farah -> sara -> joodi -> NULL');
   });
 
+
+
+  //new testing
+  it('Can successfully add a node to the end of the linked list', () => {
+    const list = new LinkedList();
+    list.append(12);
+    expect(list.toString()).toBe('12 -> NULL');
+  });
+
+  it('Can successfully add multiple nodes to the end of a linked list', () => {
+    const list = new LinkedList();
+    list.append(12);
+    list.append(13);
+    list.append(14);
+    expect(list.toString()).toBe('12 -> 13 -> 14 -> NULL');
+  });
+
+  it('can successfully insert a node before a node located in the middle of a linked list', () => {
+    const list = new LinkedList();
+    list.append(11);
+    list.append(12);
+    list.append(14);
+    list.append(15);
+    list.insertBefore(14, 13);
+    expect(list.toString()).toBe('11 -> 12 -> 13 -> 14 -> 15 -> NULL');
+  });
+
+  it('can successfully insert a node before the first node of a linked list', () => {
+    const list = new LinkedList();
+    list.append(0);
+    list.append(2);
+    list.append(3);
+    list.append(4);
+    list.append(5);
+    list.insertBefore(2, 1);
+    expect(list.toString()).toBe('0 -> 1 -> 2 -> 3 -> 4 -> 5 -> NULL');
+  });
+
+  it('can successfully insert after a node in the middle of the linked list', () => {
+    const list = new LinkedList();
+    list.append(11);
+    list.append(13);
+    list.append(15);
+    list.append(16);
+    list.insertAfter(11, 12);
+    expect(list.toString()).toBe('11 -> 12 -> 13 -> 15 -> 16 -> NULL');
+  });
+
+  it('can successfully insert a node after the last node of the linked list', () => {
+    const list = new LinkedList();
+    list.append(11);
+    list.insertAfter(11, 12);
+    expect(list.toString()).toBe('11 -> 12 -> NULL');
+  });
+
+
 });
 
 
