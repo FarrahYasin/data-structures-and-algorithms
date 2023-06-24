@@ -5,6 +5,7 @@ const Node = require('./Node');
 class LinkedList {
   constructor() {
     this.head = null;
+    this.tail=null;
   }
 
   /*insert method//Arguments: value//Returns: nothing
@@ -67,6 +68,49 @@ Returns: a string representing all the values in the Linked List, formatted as:
     return resultAsString + 'NULL';
     // return console.log(' head '+ string + 'NULL');
   }
+
+  //append
+  append(value){
+    const newNode = new Node(value);
+    if (!this.head) {
+      this.head = newNode;
+      this.tail = newNode;
+      this.tail.next = null;
+    }
+    let currentNode = this.head;
+    while(currentNode.next){
+      currentNode = currentNode.next;
+    }
+    currentNode.next = newNode;
+    this.tail = newNode;
+    this.tail.next = null;
+  }
+
+  //insert Before
+  insertBefore(value, newValue){
+    let currentNode = this.head;
+    if(currentNode.value === value || currentNode === null){
+      this.append(newValue);
+    }
+    while( currentNode.next !== null && currentNode.next.value !== value){
+      currentNode = currentNode.next;
+    }
+    const newNode = new Node(newValue);
+    newNode.next = currentNode.next;
+    currentNode.next = newNode;
+  }
+
+  //insert after
+  insertAfter(value, newValue){
+    let currentNode = this.head;
+    while(currentNode !== null && currentNode.value !== value){
+      currentNode = currentNode.next;
+    }
+    const newNode = new Node(newValue);
+    newNode.next = currentNode.next;
+    currentNode.next = newNode;
+  }
+
 }
 
 module.exports = LinkedList;
