@@ -111,6 +111,45 @@ Returns: a string representing all the values in the Linked List, formatted as:
     currentNode.next = newNode;
   }
 
+
+
+  //find the length of the linked list
+  findLength() {
+    let count = 0;
+    let currentNode = this.head;
+    while (currentNode !== null) {
+      count++;
+      currentNode = currentNode.next;
+    }
+    return count;
+  }
+
+  //find the node at given index
+  findNodeAtIndex(index) {
+    let currentNode = this.head;
+    let count = 0;
+    while (currentNode) {
+      if (count === index) {
+        return currentNode.value;
+      }
+      count++;
+      currentNode = currentNode.next;
+    }
+    return "not exist";
+  }
+
+  kthNodeFromTail(k) {
+    const length = this.findLength();
+    if (length < k || k < 0) { //if the length < argument || or the argument < 0
+      return "k must be greater than or equal to The length of linkedlist";
+    }
+
+    const kFromHead = length - k; //length of list - index (argument)//to determine the position of the desired node from the head of the list.
+    console.log(kFromHead);
+    return this.findNodeAtIndex(kFromHead);//invoke findeNodeAtIndex Method and pass to it the result of->length of list - index (argument)
+  //we invoked this method to retreve tne node at
+  }
+
 }
 
 module.exports = LinkedList;

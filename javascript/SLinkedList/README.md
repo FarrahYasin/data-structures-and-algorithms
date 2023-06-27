@@ -3,10 +3,10 @@
 
 **Singly Linked List**
 ![linked-list-image](linked-list-image.png)
-new Addition for whiteboard
-
+new Addition for whiteboard: **append method and insert Before, insert after.**
 ![insertion-linked-list-image](insertion.png)
-
+new Addition for whiteboard:**findNodeAtIndex method**
+![find_node_at_given_index.png](find_node_at_given_index_.png)
 ____________________
 
 ## The Approach & Efficiency and solution:
@@ -42,7 +42,7 @@ we have a lot of test cases to test the code:
 6. Will return false when searching for a value in the linked list that does not exist
 7. Can properly return a collection of all the values that exist in the linked list.
 
-**new Testing**
+**new Testing for insertion**
 
 1. Can successfully add a node to the end of the linked list
 2. Can successfully add multiple nodes to the end of a linked list
@@ -51,8 +51,18 @@ we have a lot of test cases to test the code:
 5. Can successfully insert after a node in the middle of the linked list
 6. Can successfully insert a node after the last node of the linked list
 
+**new Testing for finde node at given index**
+
+1. when k is greater than the length of the linked list: return an error
+2. when k is not a positive integer:throws an error
+3. returns the value of the only node when the list size is 1
+4. when k is in the middle of the list:return the correct value
+
+
+
 all these test cases passed successfully without failed ✔
 (you can see how I did the testing for my code inside LinkedList.test.js)
+
 
 
 _________
