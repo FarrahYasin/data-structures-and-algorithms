@@ -118,6 +118,44 @@ describe('testing the Linked List', () => {
   });
 
 
+
+  //new new testing
+  it("when k is greater than the length of the linked list: return an error", () => {
+    const list = new LinkedList();
+    list.append(4);
+    list.append(5);
+    list.append(6);
+    const result = list.kthNodeFromTail(7);
+    expect(result).toBe("k must be greater than or equal to The length of linkedlist");
+  });
+
+  it(" when k is not a positive integer:throws an error", () => {
+    const list = new LinkedList();
+    list.append(4);
+    list.append(5);
+    list.append(6);
+    list.append(7);
+    const result = list.kthNodeFromTail(-1);
+    expect(result).toBe("k must be greater than or equal to The length of linkedlist");
+  });
+
+  it("returns the value of the only node when the list size is 1", () => {
+    const list = new LinkedList();
+    list.append(1);
+    const result = list.kthNodeFromTail(1);
+    expect(result).toBe(1);
+  });
+
+  it("when k is in the middle of the list:return the correct value", () => {
+    const list = new LinkedList();
+    list.append(1);
+    list.append(2);
+    list.append(3);
+    list.append(4);
+    list.append(5);
+    const result = list.kthNodeFromTail(3);
+    expect(result).toBe(3);
+  });
 });
 
 
