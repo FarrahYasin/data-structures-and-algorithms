@@ -59,7 +59,6 @@ class LinkedList{
 
   insertAfter(value, newValue) {
     let currentNode = this.head;
-
     while (currentNode !== null && currentNode.value !== value) {
       currentNode = currentNode.next;
     }
@@ -80,25 +79,25 @@ class LinkedList{
 
   findNodeAtIndex(index) {
     let currentNode = this.head;
-    let count = 0;
+    let counter = 0;
     while (currentNode) {
-      if (count === index) {
+      if (counter === index) {
         return currentNode.value;
       }
-      count++;
+      counter++;
       currentNode = currentNode.next;
     }
     return "not found";
   }
 
   findLength() {
-    let count = 0;
+    let counter = 0;
     let currentnode = this.head;
     while (currentnode !== null) {
-      count++;
+      counter++;
       currentnode = currentnode.next;
     }
-    return count;
+    return counter;
   }
 
   kthNodeFromTail(k) {
@@ -120,7 +119,7 @@ class LinkedList{
 
     while(current1 && current2) {
       zippedList.append(current1.value);
-      current1 = current1.next;
+      current1= current1.next;
 
       zippedList.append(current2.value);
       current2 = current2.next;
