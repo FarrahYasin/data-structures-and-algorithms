@@ -12,7 +12,7 @@ You have access to the Node class and all the properties on the Linked List clas
 ## Whiteboard Process:
 
 new Addition for whiteboard:**linked-list-zip**
-![ll-zip.png](ll-zip.png)
+![ll-zip.png](SLL-ZIP.png)
 
 ## The Approach & Efficiency and solution:
 Approach:
@@ -39,3 +39,24 @@ the code inside LinkedList.js,and Node.js files
 
 all these test cases passed successfully without failed ✔
 (you can see how I did the testing for my code inside LinkedList.test.js)
+//example: output on compiler about testing cases 
+// Test case1: If list 1 taller than list 2 :
+// list1: 55 -> 44 -> 33 -> 22 -> 11 -> NULL
+// list2: 40 -> 50 -> 69 -> 89 -> NULL
+// result:55 -> 40 -> 44 -> 50 -> 33 -> 69 -> 22 -> 89 -> 11 -> NULL
+// ------------ --------------  --------------
+// Test case2: If list 1 smaller than list 2 :
+// list1: 33 -> 22 -> 11 -> NULL
+// list2: 40 -> 50 -> 69 -> 89 -> NULL
+// result:33 -> 40 -> 22 -> 50 -> 11 -> 69 -> 89 -> NULL
+// ------------ --------------  --------------
+// Test case3: If list 2 and list1 have the same size :
+// list1: 22 -> 11 -> NULL
+// list2: 40 -> 50 -> NULL
+// result:22 -> 40 -> 11 -> 50 -> NULL
+// ------------ --------------  --------------
+// Test case4: If list 1 was empty and list 2 is not empty:
+// list1: NULL
+// list2: 40 -> 50 -> 69 -> 89 -> NULL
+// result:40 -> 50 -> 69 -> 89 -> NULL
+// ------------ --------------  --------------
