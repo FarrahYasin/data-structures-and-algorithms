@@ -7,13 +7,13 @@
 addition for test cases:
 
 **isEmpty:**
-input:no input
-output:true or false
+input:no input.    
+output:true or false.
 
 **peek:**
-input:no input
+input:no input.    
 output:
-in queue(value of front)
+in queue(value of front),
 in stack(top.value)
 
 ---
