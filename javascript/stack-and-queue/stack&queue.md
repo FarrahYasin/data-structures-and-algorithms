@@ -4,6 +4,16 @@
 **Stack & Queue**
 ![stack&queue](stack&queue.png)
 
+addition for test cases:
+**isEmpty:**
+input:no input
+output:true or false
+
+**peek:**
+input:no input
+output:in queue(value of front)
+in stack(top.value)
+
 ---
 
 ## The Approach & Efficiency and solution:
