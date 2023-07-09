@@ -1,74 +1,4 @@
-class Node {
-  constructor(value) {
-    this.value = value;
-    this.next = null;
-    // this.length = 1;
-  }
-}
-
-class LinkedList {
-  constructor() {
-    this.head = null;
-    this.tail = null;
-    this.length = -1;
-  }
-
-  add(value) {
-    const newNode = new Node(value);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = newNode;
-    } else {
-      newNode.next = this.head;
-      this.head = newNode;
-    }
-    this.length++;
-  }
-
-  append(value) {
-    const newNode = new Node(value);
-    if (!this.head) {
-      this.head = newNode;
-      this.tail = newNode;
-    } else {
-      this.tail.next = newNode;
-      this.tail = newNode;
-    }
-    this.length++;
-  }
-
-  toString() {
-    let currentNode = this.head;
-    let result = '';
-
-    while (currentNode !== null) {
-      result += currentNode.value + ' -> ';
-      currentNode = currentNode.next;
-    }
-    return result + 'NULL';
-  }
-
-  zipLists(list1, list2) {
-    const zippedList = new LinkedList();
-    let current1 = list1.head;
-    let current2 = list2.head;
-    while(current1 && current2) {
-      zippedList.append(current1.value);
-      current1= current1.next;
-      zippedList.append(current2.value);
-      current2 = current2.next;
-    }
-    while(current1) {
-      zippedList.append(current1.value);
-      current1 = current1.next;
-    }
-    while(current2) {
-      zippedList.append(current2.value);
-      current2 = current2.next;
-    }
-    return zippedList;
-  }
-}
+const LinkedList = require("./linkedList_zip");
 
 console.log("Test case1: If list 1 taller than list 2 :");
 let ll = new LinkedList();
@@ -149,8 +79,6 @@ describe("new test for linked list Zip " , () =>{
     expect(lList3.toString()).toBe('40 -> 50 -> 69 -> 89 -> NULL');
   });
 });
-
-module.exports = LinkedList;
 
 //output on compiler
 // Test case1: If list 1 taller than list 2 :
