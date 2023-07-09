@@ -14,7 +14,7 @@ const screenForNames = (arr) => {
   // Solution code here...
   const arrToReturn = [];
   arr.forEach(item => {
-    if(/^(Mr|Mrs|Ms|Dr)\.\s[A-Z]{1}[a-z]{1,}/.test(item)){
+    if(/^(Mrs|Mr|Dr|Ms).\s[A-Z]{1}[a-z]{1,}/.test(item)){
       arrToReturn.push(item);
     }
   });
