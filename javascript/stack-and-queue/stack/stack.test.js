@@ -152,3 +152,6 @@ describe('Testing The Stack', () => {
     expect(p6_Stack.peek()).toBe(null);
   });
 });
+
+
+module.exports=Stack;
