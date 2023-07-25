@@ -63,7 +63,8 @@
 
 
 
-// // console.log(tree.preOrder());
+// console.log(tree.preOrder());
+// console.log(tree.findMax());
 
 // // console.log(tree.inOrder());
 // // console.log(tree.contain(10));
