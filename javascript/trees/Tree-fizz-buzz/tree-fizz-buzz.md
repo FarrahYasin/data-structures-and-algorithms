@@ -1,7 +1,10 @@
 ### WhiteBoard:
+<img width="883" alt="image" src="https://github.com/FarrahYasin/data-structures-and-algorithms/assets/117269271/0af00b77-e3ae-4289-a8a1-46298532feb4">
 
 
 ### The code:
+
+```
 class Node{
   constructor(value){
     this.value=value;
@@ -40,6 +43,7 @@ class Tree{
 
     return tree;
 
-  }
+  }}
+```
 
-}
+
