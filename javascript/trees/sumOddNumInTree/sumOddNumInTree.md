@@ -1,5 +1,5 @@
 
-# sum Odd Numbers in Binarry Tree
+# sum Odd Numbers in Binary Tree
 
 ### whiteBoard
 
