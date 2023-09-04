@@ -53,6 +53,7 @@ class Hashtable {
   }
 }
 
+
 const myHashtable = new Hashtable(10);
 myHashtable.set('FirstName', 'Farah');
 myHashtable.set('Age', 21);
