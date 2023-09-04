@@ -26,7 +26,7 @@ module.exports=hashTableRepeatedWord;
 ```
 
 >**Test:**
->[Hash Test File here](repeated-Word.js/repeated-word.test.js)
+>[ Test File here](repeated-word.test.js)
 >
 > ![Alt text](test.png)
 
