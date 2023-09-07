@@ -1,7 +1,9 @@
 # tree-intersection
 
 >**Whiteboard**
->![tree-intersection](tree-intersectionn.png)
+><img width="953" alt="image" src="https://github.com/FarrahYasin/data-structures-and-algorithms/assets/117269271/3928c00c-5c6f-443f-a447-815d8f58f60c">
+
+
 
 >**code**
 ```javascript
